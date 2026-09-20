@@ -3,9 +3,9 @@ window.MONOLITH = {
   // Whop plan ids (Whop dashboard -> your product -> Pricing -> each plan -> "plan_..." id).
   // A plan left empty shows "Available soon" instead of a buy button.
   plans: {
-    monthly: { id: "", price: "$50", per: "per month", note: "Cancel any time." },
-    yearly: { id: "", price: "$500", per: "per year", note: "$100 less than twelve monthly payments." },
-    lifetime: { id: "", price: "$1,200", per: "once", note: "Your key never expires. All future updates." },
+    monthly: { id: "plan_BU1egIMmJQjxZ", price: "$50", per: "per month", note: "Cancel any time." },
+    yearly: { id: "plan_Tl9DadK99QBQ3", price: "$500", per: "per year", note: "$100 less than twelve monthly payments." },
+    lifetime: { id: "plan_MNMSrySTPKEix", price: "$1,200", per: "once", note: "Your key never expires. All future updates." },
   },
   highlight: "yearly", // which plan card is outlined as best value
   checkoutBase: "https://whop.com/checkout/", // + plan id
