@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · MONOLITH</title>
+<meta name="description" content="What MONOLITH's apps and website do and do not collect.">
+<link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html"><i></i>MONOLITH</a><nav><a href="index.html#pricing">Pricing</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="doc">
+  <p class="draft"><b>DRAFT.</b> Have a lawyer review this page before launch.</p>
+  <h1>Privacy</h1>
+  <p>Plain version: the apps keep your data on your computer, and we do not run a cloud service that receives it.</p>
+  <h2>The apps</h2>
+  <ul>
+    <li>MONOLITH INBOX and MONOLITH TCG RADAR store their data locally on your computer. MONOLITH INBOX runs its own small server on your PC so your phone and other PCs can reach it over your network; that server is yours.</li>
+    <li>Mailbox passwords are kept in Windows Credential Manager on your PC. They are never sent to us.</li>
+    <li>Your license key is verified offline, on your PC. The apps do not contact us to check it, and there is no MONOLITH account.</li>
+    <li>The apps contact third parties only to do their job: your mail provider (to read your mail), a public daily TCG price mirror (market values), the retailers you ask Radar to watch, your own Discord webhook if you add one, and the public release folder on GitHub (to check for and download signed updates).</li>
+    <li>Encrypted backups are files you create and keep. We never receive them.</li>
+  </ul>
+  <h2>Buying</h2>
+  <p>Checkout, billing and subscriptions are handled by Whop. Whop collects what it needs to take payment and tells us about the sale (your name, email address, the plan and the payment id) so a license key can be generated and emailed to you. We keep a ledger of issued keys: licensee, email, plan dates and the payment id.</p>
+  <h2>This website</h2>
+  <p>The website is static. It sets no cookies and loads no analytics or third-party scripts. It remembers one preference (the colour of the background animation) in your browser's local storage. The host (GitHub Pages) keeps ordinary server logs under its own policy.</p>
+  <h2>Contact</h2>
+  <p id="contact"></p>
+</main>
+<script src="config.js"></script>
+<script>var c=window.MONOLITH||{};document.getElementById("contact").textContent=c.supportEmail?("Questions: "+c.supportEmail):(c.supportNote||"");</script>
+</body>
+</html>

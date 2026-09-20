@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MONOLITH: inventory, orders and restock monitoring for TCG resellers</title>
+<meta name="description" content="MONOLITH INBOX and MONOLITH TCG RADAR for Windows: know what you own, what it cost and what sold. One bundle, one key. Your data stays on your PC.">
+<meta property="og:title" content="MONOLITH: tools for TCG resellers">
+<meta property="og:description" content="Inventory with real cost basis, orders from email, barcode scanning, and a polite restock monitor. One bundle, one key.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MONOLITH (INBOX + TCG RADAR)","operatingSystem":"Windows 10, Windows 11","applicationCategory":"BusinessApplication","offers":[{"@type":"Offer","price":"50","priceCurrency":"USD","name":"Monthly"},{"@type":"Offer","price":"500","priceCurrency":"USD","name":"Yearly"},{"@type":"Offer","price":"1200","priceCurrency":"USD","name":"Lifetime"}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i>MONOLITH</a>
+    <nav aria-label="Sections">
+      <a href="#inbox">Inbox</a>
+      <a href="#radar">Radar</a>
+      <a href="#toolbox" class="hide-sm">Toolbox</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#start" class="hide-sm">Get started</a>
+      <a href="#faq" class="hide-sm">FAQ</a>
+    </nav>
+    <a class="btn sm primary" href="#pricing">See plans</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="eyebrow">For trading-card resellers · Windows</span>
+    <h1>Know what you own, what it cost, and what sold.</h1>
+    <p class="lead">MONOLITH INBOX turns retailer emails into orders and keeps real inventory with cost basis. MONOLITH TCG RADAR watches for restocks. They come together as one bundle, under one key, and your data stays on your own PC.</p>
+    <div class="cta">
+      <a class="btn primary" href="#pricing">See plans: from $50 a month</a>
+      <a class="btn" href="#download">Download MONOLITH Toolbox</a>
+      <span class="dim" style="font-size:14px">The download needs a license key.</span>
+    </div>
+  </div>
+  <button class="rain-toggle" id="rain-toggle" type="button" aria-pressed="false">rain: blue</button>
+</div>
+
+<section id="bundle">
+  <div class="wrap">
+    <span class="eyebrow">One bundle</span>
+    <h2>Two apps and the door they open through.</h2>
+    <p class="sub">They are sold together and unlocked by a single license key that you enter once.</p>
+    <div class="grid g3">
+      <div class="card"><span class="tag">Inventory + orders</span><h3>MONOLITH INBOX</h3><p>Orders from your email, inventory with unit costs, barcode scanning, receiving, selling and an iPhone companion. Runs on your PC with its own small server.</p></div>
+      <div class="card"><span class="tag">Restock monitor</span><h3>MONOLITH TCG RADAR</h3><p>Watches Target and Walmart product pages for listings, price and availability changes, and alerts you on the desktop and in Discord. A monitor, not a bot.</p></div>
+      <div class="card"><span class="tag">The front door</span><h3>MONOLITH Toolbox</h3><p>Enter your key once. Install, update and open both apps from one small window. Every download is signature-checked before it runs.</p></div>
+    </div>
+    <h2 style="margin-top:56px">How it works</h2>
+    <ol class="steps">
+      <li><b>Orders arrive by email</b>Inbox reads your mailboxes (read-only) and turns retailer confirmations, shipping and cancellation emails into orders and shipments.</li>
+      <li><b>Scan it in</b>Receive against the tracking number with a USB scanner, your webcam or your phone. Shortages and damage are recorded.</li>
+      <li><b>Sell and reconcile</b>Scan items out as sold. The sale is matched to that unit's own cost, so profit per sale is real.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="inbox">
+  <div class="wrap">
+    <span class="eyebrow">MONOLITH INBOX</span>
+    <h2>Inventory, orders and receiving on your own PC.</h2>
+    <p class="sub">No MONOLITH cloud account exists or is needed. The app runs its own small server on your computer; your phone connects over your Wi-Fi, or privately from anywhere with Tailscale.</p>
+    <div class="split">
+      <div>
+        <ul class="ticks">
+          <li><b>Orders from email, automatically.</b> Up to 10 mailboxes over IMAP, read-only, including the spam folder, because forwarded retailer mail often lands there. Inventory CSV import too.</li>
+          <li><b>Canceled stays canceled.</b> An order that was ever canceled never counts again, and $0 lines never count.</li>
+          <li><b>Real cost basis.</b> Permanent SKUs, UPCs and custom barcodes; purchase lots with unit cost and age; an append-only ledger so every unit is explainable.</li>
+          <li><b>Locations.</b> Warehouse, bins, store, show, vending machines. Archive products without losing history.</li>
+          <li><b>Scan everything.</b> Receive, move, allocate, sell, count, restock, damage, return, adjust. An unknown barcode can be linked to a product on the spot.</li>
+          <li><b>Receiving against tracking numbers</b> with shortages, damage and over-receipts recorded.</li>
+          <li><b>Live feed</b> of order activity with spend per item and a shareable summary image.</li>
+          <li><b>Market values next to cost</b>, from a public daily TCG price mirror.</li>
+          <li><b>iPhone companion:</b> dashboard, camera scanning, inventory with costs, receiving.</li>
+          <li><b>Team members</b> with roles (admin, manager, staff, viewer). Webhooks and notification rules.</li>
+          <li><b>Encrypted one-file backup</b> and restore, and guided setup of a second PC as an extra screen.</li>
+        </ul>
+      </div>
+      <div class="grid">
+        <div class="mock" role="img" aria-label="Illustration of the inventory screen: products with on-hand counts, average cost and market value">
+          <div class="bar"><i></i><i></i><i></i><span style="margin-left:8px">inventory</span></div>
+          <table>
+            <thead><tr><th>Product</th><th class="n">On hand</th><th class="n">Avg cost</th><th class="n">Market</th></tr></thead>
+            <tbody>
+              <tr><td>Booster Box<div class="dim mono" style="font-size:11px">SKU-000142</div></td><td class="n">18</td><td class="n">$96.40</td><td class="n up">$131.00</td></tr>
+              <tr><td>Elite Trainer Box<div class="dim mono" style="font-size:11px">SKU-000107</div></td><td class="n">42</td><td class="n">$49.99</td><td class="n up">$58.25</td></tr>
+              <tr><td>Booster Bundle<div class="dim mono" style="font-size:11px">SKU-000163</div></td><td class="n">9</td><td class="n">$26.94</td><td class="n down">$24.10</td></tr>
+              <tr><td>Collection Tin<div class="dim mono" style="font-size:11px">SKU-000088</div></td><td class="n warn">2</td><td class="n">$21.99</td><td class="n up">$29.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mock" role="img" aria-label="Illustration of the live order feed">
+          <div class="bar"><i></i><i></i><i></i><span style="margin-left:8px">live feed</span></div>
+          <div class="feed">
+            <div><span class="t">09:14</span><span class="x">Order confirmed · 4 × Elite Trainer Box</span><span class="chip ok">$199.96</span></div>
+            <div><span class="t">09:31</span><span class="x">Shipped · tracking added</span><span class="chip">in transit</span></div>
+            <div><span class="t">11:02</span><span class="x">Received · 4 of 4 scanned in</span><span class="chip ok">complete</span></div>
+            <div><span class="t">11:40</span><span class="x">Order canceled by retailer</span><span class="chip hot">canceled</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:48px">Spreadsheet vs MONOLITH INBOX</h3>
+    <div class="scroll card" style="padding:6px 8px;margin-top:12px">
+      <table class="cmp">
+        <thead><tr><th></th><th>Spreadsheet</th><th>MONOLITH INBOX</th></tr></thead>
+        <tbody>
+          <tr><td>New orders</td><td>Typed in by hand</td><td>Read from retailer emails</td></tr>
+          <tr><td>Cancellations</td><td>You have to notice and remove them</td><td>Marked canceled from the email; never counted again</td></tr>
+          <tr><td>Unit cost</td><td>One number per row</td><td>Per purchase lot, carried to each sale</td></tr>
+          <tr><td>Barcode scanning</td><td>No</td><td>USB scanner, webcam or iPhone</td></tr>
+          <tr><td>History of a unit</td><td>Whatever you remember to write down</td><td>Append-only ledger of every movement</td></tr>
+          <tr><td>Where the data lives</td><td>Usually a cloud drive</td><td>Your own PC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:40px">Honest limits</h3>
+    <ul class="ticks limits" style="margin-top:12px">
+      <li>Windows 10 or 11 (64-bit) only for the desktop app.</li>
+      <li>The iPhone companion is not on the App Store yet.</li>
+      <li>It is not a checkout bot. It never buys anything.</li>
+      <li>It does not connect to any marketplace or live-selling platform; sales are recorded by scanning or counting.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="radar">
+  <div class="wrap">
+    <span class="eyebrow">MONOLITH TCG RADAR</span>
+    <h2>A restock monitor that behaves itself.</h2>
+    <p class="sub">Runs quietly in the system tray, and can start with Windows.</p>
+    <div class="split">
+      <div class="mock" role="img" aria-label="Illustration of restock alerts">
+        <div class="bar"><i></i><i></i><i></i><span style="margin-left:8px">radar · alerts</span></div>
+        <div class="feed">
+          <div><span class="t">now</span><span class="x">Booster Box · back in stock online</span><span class="chip ok">in stock</span></div>
+          <div><span class="t">2 m</span><span class="x">Elite Trainer Box · price changed $54.99 → $49.99</span><span class="chip">price</span></div>
+          <div><span class="t">18 m</span><span class="x">Booster Bundle · 3 nearby stores show stock</span><span class="chip ok">stores</span></div>
+          <div><span class="t">1 h</span><span class="x">Premium Collection · releases in 3 days</span><span class="chip hot">priority</span></div>
+        </div>
+      </div>
+      <div>
+        <ul class="ticks">
+          <li>Watches <b>Target and Walmart</b> product pages for new listings, price changes, availability and pre-order / release dates, plus Target stock at stores near a ZIP you choose.</li>
+          <li><b>Priority view</b> for products releasing today or within 7 days.</li>
+          <li><b>Alerts</b> on the desktop and in Discord (it posts to your own Discord webhook).</li>
+          <li><b>Polite by design:</b> rate-limited, backs off when a retailer challenges it, never solves CAPTCHAs, never uses proxies or evasion tricks.</li>
+          <li><b>Verify it yourself:</b> when a check is blocked, it opens the product page in your own browser and records what you saw.</li>
+          <li>Sends what it sees to MONOLITH INBOX so retail listings line up with your inventory.</li>
+        </ul>
+        <h3 style="margin-top:28px">Honest limits</h3>
+        <ul class="ticks limits" style="margin-top:12px">
+          <li>It is a monitor, not a checkout bot: it never adds to cart and never purchases.</li>
+          <li>Pokemon Center is not supported; that site blocks all automated access.</li>
+          <li>Retailers can change or block access at any time, so checks are best-effort, and you are responsible for following each retailer's terms of use.</li>
+          <li>Monitoring runs only while your key is valid.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toolbox">
+  <div class="wrap">
+    <span class="eyebrow">MONOLITH Toolbox</span>
+    <h2>One key, entered once.</h2>
+    <p class="sub">Toolbox is the only thing you download. It asks for your key, then installs, updates and opens both apps. The apps always open through Toolbox; desktop shortcuts and start-with-Windows do that for you automatically.</p>
+    <ol class="steps">
+      <li><b>Pick a plan</b>Your license key arrives by email, usually within a few minutes.</li>
+      <li><b>Download Toolbox</b>About 3 MB. No account, no sign-in.</li>
+      <li><b>Paste your key</b>It is checked on your PC. Nothing is sent anywhere.</li>
+      <li><b>Install, then Open</b>One click each for Inbox and Radar. Updates are one click too.</li>
+    </ol>
+    <div class="card" style="margin-top:16px"><h3>Every download is verified</h3><p>Before an installer is allowed to run, Toolbox checks its SHA-256 checksum and its cryptographic signature against MONOLITH's signing key. A tampered or corrupted file is refused. The apps' own "Check for updates" buttons do the same.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>One bundle. Three ways to pay.</h2>
+    <p class="sub">Every plan includes both apps, Toolbox, the iPhone companion, team members and all updates while the plan is active. Prices in USD. Checkout is handled by Whop.</p>
+    <div class="plans" id="plans"></div>
+    <div class="grid g2" style="margin-top:28px">
+      <div class="card"><h3>If you cancel</h3><p>Monthly and Yearly run to the end of the period you paid for. After that Toolbox asks for a valid key, the apps stop opening and Radar stops monitoring. <b>Your data is not deleted.</b> It stays on your PC, and a new key opens it exactly as it was.</p></div>
+      <div class="card"><h3>Renewals</h3><p>Each time a Monthly or Yearly plan renews, a fresh key is emailed to you. Paste it into Toolbox with "Change key". Your old key keeps working until its own date, with a few days of grace, so there is no rush.</p></div>
+    </div>
+    <p class="dim" id="refund" style="margin-top:18px" hidden></p>
+    <p class="dim" style="margin-top:8px">Already a customer? <a id="manage" href="https://whop.com/" target="_blank" rel="noopener">Manage your plan on Whop</a>.</p>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <span class="eyebrow">Download</span>
+    <h2>Download MONOLITH Toolbox</h2>
+    <p class="sub">You will need your license key. It is in your purchase email. No key yet? <a href="#pricing">See plans</a>.</p>
+    <div class="cta"><a class="btn primary" id="dl" href="#">Download for Windows</a><span class="dim mono" id="dl-ver" style="font-size:13px"></span></div>
+    <p class="hash" style="margin-top:16px">SHA-256 <span id="dl-sha"></span></p>
+    <div class="note" id="smartscreen" hidden style="margin-top:18px"><b>Windows SmartScreen:</b> the installers are not code-signed with a Microsoft-recognised certificate yet, so Windows shows a blue "Windows protected your PC" box the first time. Click <b>More info</b>, then <b>Run anyway</b>. You can check the SHA-256 above first.</div>
+    <h3 style="margin-top:32px">System requirements</h3>
+    <ul class="ticks" style="margin-top:12px"><li>Windows 10 or 11, 64-bit</li><li>About 300 MB of free disk space</li><li>Internet for email, price lookups and retailer checks</li></ul>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <span class="eyebrow">Getting started</span>
+    <h2>From key to first scan.</h2>
+    <div class="grid g2">
+      <div class="card"><h3>MONOLITH INBOX</h3>
+        <ul class="ticks" style="margin-top:12px">
+          <li>Install Toolbox, paste your key, click Install on MONOLITH INBOX, then Open.</li>
+          <li>Create your account. It is stored on your own PC.</li>
+          <li>Add a mailbox using an <b>app password</b>, not your normal password: <a href="https://support.google.com/accounts/answer/185833" target="_blank" rel="noopener">Google</a> · <a href="https://support.microsoft.com/account-billing/how-to-get-and-use-app-passwords-5896ed9b-4263-e681-128a-a6f2979a7944" target="_blank" rel="noopener">Microsoft</a>.</li>
+          <li>Scan your first product to add it, then receive stock against it.</li>
+          <li>Connect the phone with the address shown in Settings.</li>
+        </ul></div>
+      <div class="card"><h3>MONOLITH TCG RADAR</h3>
+        <ul class="ticks" style="margin-top:12px">
+          <li>Install and Open it from Toolbox.</li>
+          <li>Pick retailers and your ZIP code.</li>
+          <li>Add a Discord webhook for alerts (optional).</li>
+          <li>Link it to Inbox so listings line up with inventory (optional).</li>
+        </ul>
+        <h3 style="margin-top:22px">Renewed, or a new PC?</h3>
+        <p style="margin-top:6px">Paste the new key with "Change key" in Toolbox. On a new PC, install Toolbox and paste the same key; Inbox's encrypted backup brings your data across.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2>Straight answers.</h2>
+    <div style="margin-top:20px">
+      <details><summary>Can I buy just one app?</summary><p>No. MONOLITH INBOX and MONOLITH TCG RADAR are sold together as one bundle.</p></details>
+      <details><summary>Do I need a key for each app?</summary><p>No. One key, entered once in Toolbox, opens both.</p></details>
+      <details><summary>Does the Lifetime key ever expire?</summary><p>No. A Lifetime key has no expiry date and never needs renewing. Keep the purchase email: the key is how you reinstall or move to a new PC.</p></details>
+      <details><summary>Where is my data?</summary><p>On your own computer. Mailbox passwords are kept in Windows Credential Manager on your PC and are never sent to us. The license key is checked offline; the apps do not phone home.</p></details>
+      <details><summary>Do I lose my data if I cancel?</summary><p>No. Nothing is deleted. The apps stop opening until a valid key is entered, and then everything is as you left it.</p></details>
+      <details><summary>My key has not arrived.</summary><p>It is usually there within a few minutes. If it has not arrived in 30 minutes, check spam, then contact support with your Whop receipt.</p></details>
+      <details><summary>Toolbox says my key has expired.</summary><p>Look for the most recent key email (a fresh key is sent at every renewal) and paste it with "Change key". If your plan ended, pick a plan again. Your data is safe either way.</p></details>
+      <details><summary>Is this a checkout bot?</summary><p>No. Neither app adds to cart, purchases, solves CAPTCHAs or uses proxies.</p></details>
+    </div>
+    <h3 style="margin-top:40px" id="support">Support</h3>
+    <p class="sub" id="support-line" style="margin-top:6px"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    <p>MONOLITH is not affiliated with or endorsed by Target, Walmart, Whatnot, TCGplayer, The Pokemon Company, Nintendo, Bandai, Wizards of the Coast, AYCD, Whop or Tailscale. All trademarks belong to their owners.</p>
+  </div>
+</footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
