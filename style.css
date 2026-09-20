@@ -54,7 +54,6 @@ h3 { font-size: 18px; margin: 0 0 6px; }
 ul.ticks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 ul.ticks li { padding-left: 26px; position: relative; color: #c9d3e4; font-size: 15px; }
 ul.ticks li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 12px; height: 7px; border-left: 2px solid var(--green); border-bottom: 2px solid var(--green); transform: rotate(-45deg); }
-ul.limits li::before { border: 0; width: 10px; height: 2px; background: var(--amber); transform: none; top: 12px; }
 .steps { counter-reset: s; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 0; margin: 0; list-style: none; }
 .steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; color: #c9d3e4; font-size: 15px; }
 .steps li::before { content: "0" counter(s); display: block; font: 700 13px var(--mono); color: var(--accent); margin-bottom: 8px; letter-spacing: .1em; }

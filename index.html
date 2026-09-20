@@ -6,7 +6,7 @@
 <title>MONOLITH: inventory, orders and restock monitoring for TCG resellers</title>
 <meta name="description" content="MONOLITH INBOX and MONOLITH TCG RADAR for Windows: know what you own, what it cost and what sold. One bundle, one key. Your data stays on your PC.">
 <meta property="og:title" content="MONOLITH: tools for TCG resellers">
-<meta property="og:description" content="Inventory with real cost basis, orders from email, barcode scanning, and a polite restock monitor. One bundle, one key.">
+<meta property="og:description" content="Inventory with real cost basis, orders from email, barcode scanning, and a restock monitor. One bundle, one key.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#0b0d12">
@@ -56,7 +56,7 @@
     <p class="sub">They are sold together and unlocked by a single license key that you enter once.</p>
     <div class="grid g3">
       <div class="card"><span class="tag">Inventory + orders</span><h3>MONOLITH INBOX</h3><p>Orders from your email, inventory with unit costs, barcode scanning, receiving, selling and an iPhone companion. Runs on your PC with its own small server.</p></div>
-      <div class="card"><span class="tag">Restock monitor</span><h3>MONOLITH TCG RADAR</h3><p>Watches Target and Walmart product pages for listings, price and availability changes, and alerts you on the desktop and in Discord. A monitor, not a bot.</p></div>
+      <div class="card"><span class="tag">Restock monitor</span><h3>MONOLITH TCG RADAR</h3><p>Watches Target and Walmart product pages for listings, price and availability changes, and alerts you on the desktop the moment something changes.</p></div>
       <div class="card"><span class="tag">The front door</span><h3>MONOLITH Toolbox</h3><p>Enter your key once. Install, update and open both apps from one small window. Every download is signature-checked before it runs.</p></div>
     </div>
     <h2 style="margin-top:56px">How it works</h2>
@@ -129,20 +129,13 @@
       </table>
     </div>
 
-    <h3 style="margin-top:40px">Honest limits</h3>
-    <ul class="ticks limits" style="margin-top:12px">
-      <li>Windows 10 or 11 (64-bit) only for the desktop app.</li>
-      <li>The iPhone companion is not on the App Store yet.</li>
-      <li>It is not a checkout bot. It never buys anything.</li>
-      <li>It does not connect to any marketplace or live-selling platform; sales are recorded by scanning or counting.</li>
-    </ul>
   </div>
 </section>
 
 <section id="radar">
   <div class="wrap">
     <span class="eyebrow">MONOLITH TCG RADAR</span>
-    <h2>A restock monitor that behaves itself.</h2>
+    <h2>Know the moment it is back.</h2>
     <p class="sub">Runs quietly in the system tray, and can start with Windows.</p>
     <div class="split">
       <div class="mock" role="img" aria-label="Illustration of restock alerts">
@@ -158,17 +151,8 @@
         <ul class="ticks">
           <li>Watches <b>Target and Walmart</b> product pages for new listings, price changes, availability and pre-order / release dates, plus Target stock at stores near a ZIP you choose.</li>
           <li><b>Priority view</b> for products releasing today or within 7 days.</li>
-          <li><b>Alerts</b> on the desktop and in Discord (it posts to your own Discord webhook).</li>
-          <li><b>Polite by design:</b> rate-limited, backs off when a retailer challenges it, never solves CAPTCHAs, never uses proxies or evasion tricks.</li>
-          <li><b>Verify it yourself:</b> when a check is blocked, it opens the product page in your own browser and records what you saw.</li>
+          <li><b>Desktop alerts</b> the moment something you watch changes, and a running activity feed in the app.</li>
           <li>Sends what it sees to MONOLITH INBOX so retail listings line up with your inventory.</li>
-        </ul>
-        <h3 style="margin-top:28px">Honest limits</h3>
-        <ul class="ticks limits" style="margin-top:12px">
-          <li>It is a monitor, not a checkout bot: it never adds to cart and never purchases.</li>
-          <li>Pokemon Center is not supported; that site blocks all automated access.</li>
-          <li>Retailers can change or block access at any time, so checks are best-effort, and you are responsible for following each retailer's terms of use.</li>
-          <li>Monitoring runs only while your key is valid.</li>
         </ul>
       </div>
     </div>
@@ -235,7 +219,6 @@
         <ul class="ticks" style="margin-top:12px">
           <li>Install and Open it from Toolbox.</li>
           <li>Pick retailers and your ZIP code.</li>
-          <li>Add a Discord webhook for alerts (optional).</li>
           <li>Link it to Inbox so listings line up with inventory (optional).</li>
         </ul>
         <h3 style="margin-top:22px">Renewed, or a new PC?</h3>
