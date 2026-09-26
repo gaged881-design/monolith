@@ -12,8 +12,8 @@ window.MONOLITH = {
 
   // The one download. The file name never changes between versions.
   downloadUrl: "https://github.com/gaged881-design/monolith-releases/releases/latest/download/MONOLITH-Toolbox-Setup.exe",
-  toolboxVersion: "0.1.0",
-  toolboxSha256: "003a92dccb527fea1253cabcc5b514741b0739475bbcb5503fba2b7dcd361940",
+  toolboxVersion: "0.2.0",
+  toolboxSha256: "d558724e7ec0da92e1edf2a3c7142402e2b3edfde3d7e919b662abe8a8fb4a41",
 
   supportEmail: "", // shown on the site when filled in
   supportNote: "Message us from the MONOLITH page on Whop.", // shown when there is no email
