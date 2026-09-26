@@ -7,9 +7,9 @@
   // ---- plans
   var names = { monthly: "Monthly", yearly: "Yearly", lifetime: "Lifetime" };
   var extras = {
-    monthly: ["Both apps + Toolbox", "A fresh key every month you stay", "Cancel any time"],
-    yearly: ["Both apps + Toolbox", "A fresh key each year", "2 months free vs monthly"],
-    lifetime: ["Both apps + Toolbox", "The key never expires", "All future updates included"],
+    monthly: ["MONOLITH TCG RADAR + Toolbox", "INBOX included when it ships", "Cancel any time"],
+    yearly: ["MONOLITH TCG RADAR + Toolbox", "INBOX included when it ships", "2 months free vs monthly"],
+    lifetime: ["MONOLITH TCG RADAR + Toolbox", "The key never expires", "All future updates, INBOX included"],
   };
   var plans = $("plans");
   if (plans && C.plans) {

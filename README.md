@@ -1,4 +1,4 @@
-# MONOLITH website
+# MONOLITH website (MONOLITH TCG RADAR; INBOX shown as coming soon)
 
 Static site (no build step). Hosted on GitHub Pages: https://gaged881-design.github.io/monolith/
 
