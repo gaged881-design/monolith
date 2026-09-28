@@ -15,7 +15,7 @@ window.MONOLITH = {
   toolboxVersion: "0.2.0",
   toolboxSha256: "d558724e7ec0da92e1edf2a3c7142402e2b3edfde3d7e919b662abe8a8fb4a41",
 
-  supportEmail: "", // shown on the site when filled in
+  supportEmail: "monolithradarsupport@gmail.com", // shown on the site when filled in
   supportNote: "Message us from the MONOLITH page on Whop.", // shown when there is no email
   refundPolicy: "", // plain sentence; the row is hidden while this is empty
   manageUrl: "https://whop.com/", // where subscribers manage or cancel their plan
